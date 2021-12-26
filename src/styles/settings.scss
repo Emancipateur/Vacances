@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    cursor: pointer;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  a:visited {
+    color:white;
+  }
+
+  $borderRadius: 25px;
+  $color-1 : rgb(214, 240, 240);
+  $color-2 :rgb(64, 114, 155);
+  $color-3 : #1D1E23;
