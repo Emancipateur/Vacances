@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Profil from "./Profil";
 
-const Comment = ({ newPost }) => {
+const Comment = ({ newPost, background }) => {
   const [dataPost, setDataPost] = useState([]);
 
+  console.log(background);
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((res) => res.json())
@@ -11,7 +12,7 @@ const Comment = ({ newPost }) => {
   }, []);
 
   return (
-    <div className="comment">
+    <div className="comment" style={{background :background}}>
       <h2>Section Commentaires</h2>
       {dataPost
         .filter((item) => item.id < 10)

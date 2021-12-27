@@ -1,12 +1,67 @@
+.china{
+
+    background: url('../../assets/chine.jpg') no-repeat center center fixed; 
+
+  
+}
+
 .chine{
     display: flex;
 
 
     .chineContent{
-        height: 100vh;
-        background-color: rgb(219, 195, 87);
+        font-size: 1.2rem;
+        padding: 1rem;
+        grid-area: C;
+        border-radius: $borderRadius;
         opacity: 0.9;
         width: 100%;
-        border-radius: $borderRadius;
-    }
-}
+       
+        background-color: rgb(238, 240, 214);
+        display:grid;
+        grid-template-columns: 80% 20%;
+        grid-template-areas: 
+        "T M"
+        "C C"
+        "I I"
+        "d d";
+
+        h1{
+            grid-area: T;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .firstP{
+        
+           
+            grid-area: C;
+        }
+        .imgMap{
+            margin-top: 1rem;
+            grid-area: M;
+        }
+
+        .imgContainer{
+            grid-area: I;
+            display: flex;
+            justify-content: center;
+          margin: 2rem;
+          gap: 2rem;
+           
+            img{
+                width: 30%;
+                height: auto;
+                border-radius: $borderRadius;
+             
+            }
+
+        }
+
+        .secondP{
+            grid-area: d;
+        }
+
+    }}
+
+

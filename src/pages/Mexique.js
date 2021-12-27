@@ -14,8 +14,7 @@ const Mexique = () => {
         <>
             <Navigation className='navigation' />
         <div className='mexique'>
-            <SideBar className='sideBar'/>
-            <div className='backImage'>
+            <SideBar />
             <div className="mexiqueContent">
                 <h1>Mexique </h1>
                 <img  className ="imgMap"src={image} width='50%' height='auto' alt="photo88" />
@@ -41,7 +40,7 @@ Avec une population estimée en 2020 à 128 649 565 d'habitants, le Mexique se c
 Politiquement, le Mexique est une république fédérale, composée de trente-deux entités fédératives dont trente et une ont le statut d'État, Mexico ayant un statut spécial (qui lui permet une autonomie accrue comparable à celle d'un État) car abritant la capitale politique du pays14,15.
 </p>
             </div>
-            </div>
+        
             
         </div>
         <CommentPost />
