@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Profil = () => {
+const Profil = ({userName}) => {
    
     const [user , setUser] = useState([])
 
@@ -17,7 +17,7 @@ const Profil = () => {
 
                     <div className='profilContent'>
                           <img src={item.picture.medium} alt="profilPicture" />
-                <h4>{item.name.first}</h4>
+                <h4>{userName ? userName : item.name.first}</h4>
                 </div>)
             })}
   

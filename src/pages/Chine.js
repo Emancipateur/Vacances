@@ -1,4 +1,5 @@
 import React from 'react';
+import CommentPost from '../components/CommentPost';
 import Navigation from '../components/Navigation';
 import Post from '../components/Post';
 import Profil from '../components/Profil';
@@ -13,10 +14,7 @@ const Chine = () => {
                 <SideBar />
             <div className="chineContent">
                 <h1>Chine</h1>
-<Profil />
-<Profil />
-<Profil />
-<Post />
+        <CommentPost />
             </div>
             
         </div>

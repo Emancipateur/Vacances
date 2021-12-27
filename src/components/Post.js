@@ -1,33 +1,53 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 
-const Post = () => {
+const Post = ({setNewPost}) => {
 
-    const [post , setPost] = useState([])
+  const [post , setPost] = useState('')
+  const [title, setTitle] = useState('')
+  const [userName, setUserName] = useState('')
 
-    useEffect(() => {
+  
+
+const sendPost= () => {
+
         fetch('https://jsonplaceholder.typicode.com/posts', {
             method: 'POST',
             body: JSON.stringify({
-              title: 'foo',
-              body: 'bar',
+              title: title,
+              body: post,
               userId: 1,
+              name: userName 
             }),
             headers: {
               'Content-type': 'application/json; charset=UTF-8',
             },
           })
             .then((response) => response.json())
-            .then((json) => console.log(json));
-      },[])
+            .then((json) => setNewPost(json))
+            .then(setUserName(''))
+            .then(setTitle(''))
+            .then(setPost(''))
+          
+      }
 
 
     return (
+
+
         <div className='post'>
 <div className="postContent">
 
+    <label htmlFor="userName">Pseudo</label>
+    <input type="text" id='userName' value={userName} onChange={ (e) => setUserName(e.target.value)}/>
+  <label htmlFor="postTitle">Titre</label>
+    <input type="text" id='postTitle'value={title} onChange={ (e) => setTitle(e.target.value)}/>
+    <label htmlFor="postBody">Message</label> 
+     <textarea type="text" id='postBody'value={post} onChange={ (e) => setPost(e.target.value)}/>
+    <button id='buttonPost' onClick={sendPost} >Envoyer</button>
 
     </div>            
         </div>
+     
     );
 };
 

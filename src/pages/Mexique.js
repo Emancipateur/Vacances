@@ -4,7 +4,8 @@ import SideBar from '../components/SideBar';
 import image from '../assets/mexiquemap.png'
 import image2 from '../assets/mexique1.jpg'
 import image3 from '../assets/mexique2.jpg'
-import Comment from '../components/Comment';
+import CommentPost from '../components/CommentPost';
+
 
 
 
@@ -43,7 +44,7 @@ Politiquement, le Mexique est une république fédérale, composée de trente-de
             </div>
             
         </div>
-        <Comment />
+        <CommentPost />
         </>
     );
 };

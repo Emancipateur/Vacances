@@ -3,6 +3,8 @@ display: grid;
 background-color: rgb(64, 114, 155);
 border-radius: $borderRadius;
 min-width: 300px;
+box-shadow: -9px 5px 5px 0px rgba(0,0,0,0.75);
+margin : 0 0.5rem;
 
 .sideBarContent{
     width: 100%;
