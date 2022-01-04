@@ -33,12 +33,15 @@
 
     .newComment{
         display: flex;
+
         padding: 1rem;
 
         .newCommentBody{
+            width: 100%;
+    text-align: center;
       
         h3{
-          
+   
             color : $color-2;
             text-transform: capitalize;
         }
@@ -47,6 +50,17 @@
             text-align: left;
             padding-left: 1rem;
         }
+
+    
     }
 }  
 }
+
+@media screen and (max-width: 850px){
+
+    .comment{
+        width: 100%
+    }
+  
+}
+    

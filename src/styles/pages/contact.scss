@@ -1,0 +1,30 @@
+.contact{
+    display: flex;
+    position: relative;
+    transform: translateY(50%);
+    height: 50vh;
+
+.contactContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $color-1;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: $borderRadius;
+    opacity: 0.9;
+    width: 100%;
+    gap: 3rem;
+
+    .infoContact{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+  
+    
+    }
+
+}
+
+}

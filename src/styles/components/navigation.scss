@@ -1,13 +1,30 @@
 .navigation{
-    background-color: $color-3;
+
+    background: linear-gradient(97deg, rgba(64,114,155,1) 0%, rgba(208,235,237,1) 46%, rgba(64,114,155,1) 100%);
     opacity: 0.9;
-    color: white;
+    color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    // border-radius: 0 0px 25px 25px;
-    border-radius: $borderRadius;
+    // border-radius: $borderRadius;
     min-height: 50px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid white;
+    position: relative;
+    animation: moving 1s linear;
+    font-size: 1.2rem;
+
+    a{
+        color: black;
+    }
+}
     
 
-}
+// @keyframes moving{
+//     0% { left:  50% ; width : 0% ; background: $color-1; color: $color-3;}
+//     50% { left:  0%  ; width : 50% ; background: $color-2;}
+    
+
+//     100%{ width : 100% }
+
+// }

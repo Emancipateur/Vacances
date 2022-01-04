@@ -1,0 +1,48 @@
+.book{
+    display: flex;
+
+}
+
+.bookContent{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $color-1;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: $borderRadius;
+    opacity: 0.9;
+    width: 75%;
+    gap: 3rem;
+    margin: auto;
+
+
+    .form{
+
+        select{
+            margin-left: 2rem;
+            width: 200px;
+            border-radius: $borderRadius;
+            text-align: center;
+            background: white;
+        }
+        select option[value="mexique"] {
+            background: $color-1;
+        }
+        select option[value="chine"] {
+            background: rgb(238, 240, 214);
+        }
+    }
+
+    .calendar{
+    
+    
+    
+        display: flex;
+        justify-content: center;
+    }
+}
+
+

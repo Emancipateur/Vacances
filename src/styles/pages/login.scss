@@ -1,0 +1,43 @@
+.login{
+    display: flex;
+    position: relative;
+    transform: translateY(50%);
+    height: 50vh;
+  
+
+
+
+    .loginContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5rem;
+        gap: 2rem;
+        background: $color-1;
+        font-size: 1.2rem;
+        padding: 1rem;
+        border-radius: $borderRadius;
+        opacity: 0.9;
+        width: 100%;
+       
+
+        input {
+            border-radius: $borderRadius;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+            font-family: cursive;
+            border: none;
+            }
+
+            button{
+                font-size: 1.2rem;
+                padding : 0.6rem;
+                margin: 2rem auto ;
+                border-radius: $borderRadius;
+                 background-color: $color-2;
+                 border: none;
+                 color: white;
+            }
+    }
+}

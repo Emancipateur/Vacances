@@ -10,7 +10,7 @@ const SideBar = () => {
   
             <ul>
                 <li>
-                    <NavLink to="/" className={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-home"></i><span>Home</span></NavLink>
+                    <NavLink to="/" className={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-home"></i><span> Home</span></NavLink>
                 </li>
                 <li>
                     <NavLink to="/mexique" className={(navData)=> navData.isActive ? "active" : ""}><span>Mexique</span></NavLink>
@@ -18,9 +18,9 @@ const SideBar = () => {
                 <li>
                     <NavLink to="/chine" className={(navData)=> navData.isActive ? "active" : ""}><span>Chine</span></NavLink>
                 </li>
-                <li>
+                {/* <li>
                     <NavLink to="/contact" className={(navData)=> navData.isActive ? "active" : ""}><span>Contact</span></NavLink>
-                </li>
+                </li> */}
             </ul>
       
 

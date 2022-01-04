@@ -14,7 +14,7 @@ const Mexique = () => {
         <>
             <Navigation className='navigation' />
         <div className='mexique'>
-            <SideBar />
+            <SideBar className='sideBar' />
             <div className="mexiqueContent">
                 <h1>Mexique </h1>
                 <img  className ="imgMap"src={image} width='50%' height='auto' alt="photo88" />

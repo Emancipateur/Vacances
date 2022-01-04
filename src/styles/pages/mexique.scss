@@ -62,4 +62,27 @@ body{
 
     }}
 
+    @media screen and (max-width: 850px){
+
+        .sideBar{
+            display: none;
+        }
+        .img1,.img2{
+            width: 50% !important;
+            height: auto;
+       
+               }
+    }
+        
+    @media screen and (max-width: 580px){
+.imgContainer{
+
+        img{
+     width: 50% !important;
+     height: auto;
+
+        }
+    }
+      
+    }
 
