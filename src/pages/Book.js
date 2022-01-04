@@ -2,17 +2,34 @@ import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 
 function Book() {
+
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+  const options1 = { day: 'numeric' }
   const [value, setValue] = useState(new Date());
+  const [startDate, setStartDate] = useState('')
+  const [endDate, setEndDate] = useState('')
+
+
+  function howManyDay(num1, num2) {
+
+  if (num1 > num2) {
+    return num1 - num2
+  } else {
+    return num2 - num1
+  }
+}
 
   function onChange(nextValue) {
     setValue(nextValue);
-    console.log(value[0])
-    console.log(value[1])
+  setStartDate(nextValue[0].toLocaleString('fr-FR', options1))
+  setEndDate(nextValue[1].toLocaleString('fr-FR', options1))
+
+
   }
 
   function formatDate(choosenDate){
     const date = new Date(choosenDate.getTime())
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+
         const formatDate =  date.toLocaleString('fr-FR', options)
          console.log(formatDate);
    
@@ -38,7 +55,11 @@ function Book() {
           value={value}
         />
         </div>
-       
+          <div className="BookingDetails">
+
+            { value[0] ? ('Du ' + value[0].toLocaleString('fr-FR', options) + ' au ' + value[1].toLocaleString('fr-FR', options)) : null}
+          <p>Nombre de jour total : {howManyDay(startDate, endDate)}</p>
+          </div>
         </div>
     </div>
   );
