@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Mexique from './pages/Mexique';
 import Login from './pages/Login';
 import Book from './pages/Book';
+import SucessBooking from './pages/SucessBooking';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/contact' element={<Contact />}/> 
         <Route path='/login' element={<Login />}/> 
         <Route path='/book' element={<Book />}/> 
+        <Route path='/sucessBooking' element={<SucessBooking />}/> 
 
         
       </Routes>

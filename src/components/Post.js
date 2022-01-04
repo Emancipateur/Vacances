@@ -1,4 +1,5 @@
 import React, {  useState } from 'react';
+import Button from './Button';
 
 const Post = ({setNewPost}) => {
 
@@ -43,7 +44,7 @@ const sendPost= () => {
     <input type="text" id='postTitle'value={title} onChange={ (e) => setTitle(e.target.value)}/>
     <label htmlFor="postBody">Message</label> 
      <textarea type="text" id='postBody'value={post} onChange={ (e) => setPost(e.target.value)}/>
-    <button id='buttonPost' onClick={sendPost} >Envoyer</button>
+    <Button onClick={sendPost} text={'Envoyer'} />
 
     </div>            
         </div>

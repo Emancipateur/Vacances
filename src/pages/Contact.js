@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
-import Calendar from 'react-calendar';
+import React from 'react';
 import SideBar from '../components/SideBar';
-import { useSelector } from 'react-redux'
+
 
 
 const Contact = () => {
-    const info = useSelector((state) => state.user.value )
-
-
-  const [value, onChange] = useState(new Date());
+   
 
     return (
         <div className='contact'>
@@ -21,17 +17,8 @@ const Contact = () => {
                    <span> <i className="fas fa-home"></i>  Adresse : <span>888 Rue de code</span></span>
                    <span> <i className="fas fa-mail-bulk"></i>  E-mail : <span>RueDuCode@voyage.com</span></span>
 
-
-
                 </div>
-
             </div>
-            <div>
-      <Calendar onClickDay={(value, event) => alert('Vous avez choisit : '+ value)}
-        onChange={onChange}
-        value={value}
-      />
-    </div>
         </div>
 
         

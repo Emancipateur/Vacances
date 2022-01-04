@@ -18,9 +18,9 @@ const SideBar = () => {
                 <li>
                     <NavLink to="/chine" className={(navData)=> navData.isActive ? "active" : ""}><span>Chine</span></NavLink>
                 </li>
-                {/* <li>
-                    <NavLink to="/contact" className={(navData)=> navData.isActive ? "active" : ""}><span>Contact</span></NavLink>
-                </li> */}
+                <li>
+                    <NavLink to="/book" className={(navData)=> navData.isActive ? "active" : ""}><span>Réserver</span></NavLink>
+                </li>
             </ul>
       
 
